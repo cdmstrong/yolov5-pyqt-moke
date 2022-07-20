@@ -1,0 +1,91 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'test.ui'
+#
+# Created by: PyQt5 UI code generator 5.9.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PyQt5 import QtCore, QtGui, QtWidgets
+
+class Ui_MainWindow(object):
+    def setupUi(self, MainWindow):
+        MainWindow.setObjectName("MainWindow")
+        MainWindow.resize(1073, 885)
+        icon = QtGui.QIcon()
+        icon.addPixmap(QtGui.QPixmap("../Downloads/ico.ico"), QtGui.QIcon.Normal, QtGui.QIcon.Off)
+        MainWindow.setWindowIcon(icon)
+        MainWindow.setDocumentMode(False)
+        self.centralwidget = QtWidgets.QWidget(MainWindow)
+        self.centralwidget.setObjectName("centralwidget")
+        self.loadWeight = QtWidgets.QPushButton(self.centralwidget)
+        self.loadWeight.setGeometry(QtCore.QRect(30, 30, 101, 71))
+        self.loadWeight.setObjectName("loadWeight")
+        self.initModel = QtWidgets.QPushButton(self.centralwidget)
+        self.initModel.setGeometry(QtCore.QRect(30, 140, 101, 71))
+        self.initModel.setObjectName("initModel")
+        self.imgScan = QtWidgets.QPushButton(self.centralwidget)
+        self.imgScan.setGeometry(QtCore.QRect(30, 260, 101, 71))
+        self.imgScan.setObjectName("imgScan")
+        self.videoScan = QtWidgets.QPushButton(self.centralwidget)
+        self.videoScan.setGeometry(QtCore.QRect(30, 370, 101, 71))
+        self.videoScan.setObjectName("videoScan")
+        self.capScan = QtWidgets.QPushButton(self.centralwidget)
+        self.capScan.setGeometry(QtCore.QRect(30, 490, 101, 71))
+        self.capScan.setObjectName("capScan")
+        self.label = QtWidgets.QLabel(self.centralwidget)
+        self.label.setGeometry(QtCore.QRect(540, 10, 131, 51))
+        self.label.setObjectName("label")
+        self.log = QtWidgets.QTextEdit(self.centralwidget)
+        self.log.setGeometry(QtCore.QRect(30, 650, 1021, 201))
+        self.log.setObjectName("log")
+        self.label_2 = QtWidgets.QLabel(self.centralwidget)
+        self.label_2.setGeometry(QtCore.QRect(30, 590, 131, 51))
+        self.label_2.setObjectName("label_2")
+        self.show = QtWidgets.QLabel(self.centralwidget)
+        self.show.setGeometry(QtCore.QRect(180, 60, 801, 511))
+        self.show.setObjectName("show")
+        self.end = QtWidgets.QPushButton(self.centralwidget)
+        self.end.setGeometry(QtCore.QRect(780, 590, 81, 41))
+        self.end.setObjectName("end")
+        self.start = QtWidgets.QPushButton(self.centralwidget)
+        self.start.setGeometry(QtCore.QRect(610, 590, 91, 41))
+        self.start.setObjectName("start")
+        MainWindow.setCentralWidget(self.centralwidget)
+        self.menubar = QtWidgets.QMenuBar(MainWindow)
+        self.menubar.setGeometry(QtCore.QRect(0, 0, 1073, 23))
+        self.menubar.setObjectName("menubar")
+        MainWindow.setMenuBar(self.menubar)
+        self.statusbar = QtWidgets.QStatusBar(MainWindow)
+        self.statusbar.setObjectName("statusbar")
+        MainWindow.setStatusBar(self.statusbar)
+        self.actionOpen = QtWidgets.QAction(MainWindow)
+        self.actionOpen.setObjectName("actionOpen")
+        self.actionSave = QtWidgets.QAction(MainWindow)
+        self.actionSave.setObjectName("actionSave")
+        self.actionExit = QtWidgets.QAction(MainWindow)
+        self.actionExit.setObjectName("actionExit")
+        self.actionTypeHere = QtWidgets.QAction(MainWindow)
+        self.actionTypeHere.setObjectName("actionTypeHere")
+
+        self.retranslateUi(MainWindow)
+        QtCore.QMetaObject.connectSlotsByName(MainWindow)
+
+    def retranslateUi(self, MainWindow):
+        _translate = QtCore.QCoreApplication.translate
+        MainWindow.setWindowTitle(_translate("MainWindow", "陈Sir活体检测系统"))
+        self.loadWeight.setText(_translate("MainWindow", "加载模型权重"))
+        self.initModel.setText(_translate("MainWindow", "初始化模型"))
+        self.imgScan.setText(_translate("MainWindow", "图片检测"))
+        self.videoScan.setText(_translate("MainWindow", "视频检测"))
+        self.capScan.setText(_translate("MainWindow", "摄像头检测"))
+        self.label.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:20pt;\">结果展示</span></p></body></html>"))
+        self.label_2.setText(_translate("MainWindow", "<html><head/><body><p><span style=\" font-size:20pt;\">检测输出</span></p></body></html>"))
+        self.show.setText(_translate("MainWindow", "dd"))
+        self.end.setText(_translate("MainWindow", "结束检测"))
+        self.start.setText(_translate("MainWindow", "开始检测"))
+        self.actionOpen.setText(_translate("MainWindow", "Open"))
+        self.actionSave.setText(_translate("MainWindow", "Save"))
+        self.actionExit.setText(_translate("MainWindow", "Exit"))
+        self.actionTypeHere.setText(_translate("MainWindow", "TypeHere"))
+
